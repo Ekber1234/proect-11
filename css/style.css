@@ -1764,6 +1764,18 @@
     font-size: 1.1rem;
   }
 }
+#market {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#footer_left {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 #passion {
   margin-top: 120px;
 }
@@ -2057,7 +2069,8 @@
     font-size: 0.9rem;
   }
   #footer_left {
-    display: none;
+    visibility: visible;
+    z-index: 999;
     width: 16.5%;
     height: 100vh;
     background-color: #10223A;
@@ -2067,8 +2080,8 @@
   #footer_left .wagg img {
     padding-top: 70px;
   }
-  #footer_left .listss {
-    align-items: center;
+  #footer_left .listss li {
+    text-align: center;
   }
   #footer_left .listss .pages {
     position: relative;
@@ -2076,16 +2089,17 @@
   #footer_left .listss .pages ul {
     padding-top: 8px;
     visibility: hidden;
+    border-radius: 0px;
   }
   #footer_left .listss .pages ul li a {
     color: #10223A;
     border-radius: 1px;
     padding: 10px 44px;
-    border-radius: 30% 70% 70% 30%/30% 45% 55% 70%;
+    transition: 0.1s ease-in;
   }
   #footer_left .listss .pages ul li a:hover {
     background-color: orange;
-    border-radius: 62% 38% 82% 18%/54% 61% 39% 46%;
+    border-radius: 0px;
   }
   #footer_left .listss .pages .drop-menu {
     background-color: whitesmoke;
@@ -2111,9 +2125,8 @@
   #footer_left .listss ul li a {
     border-radius: 30% 70% 70% 30%/30% 45% 55% 70%;
     text-decoration: none;
-    transition: 0.7s ease-in-out;
+    transition: 0.5s ease-in-out;
     padding: 9px;
-    border-radius: 8mm;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     color: white;
@@ -2495,12 +2508,15 @@
     z-index: 999;
     width: 16.5%;
     height: 100vh;
-    background-color: #10223a;
+    background-color: #10223A;
     position: fixed;
     margin-top: 56px;
   }
   #footer_left .wagg img {
     padding-top: 70px;
+  }
+  #footer_left .listss li {
+    text-align: center;
   }
   #footer_left .listss .pages {
     position: relative;
@@ -2511,7 +2527,7 @@
     border-radius: 0px;
   }
   #footer_left .listss .pages ul li a {
-    color: #10223a;
+    color: #10223A;
     border-radius: 1px;
     padding: 10px 44px;
     transition: 0.1s ease-in;
@@ -2536,7 +2552,7 @@
   }
   #footer_left .listss ul .orn a {
     background-color: orange;
-    color: #10223a;
+    color: #10223A;
   }
   #footer_left .listss ul li {
     padding: 10px 0;
@@ -2553,7 +2569,7 @@
   #footer_left .listss ul li a:hover {
     border-radius: 62% 38% 82% 18%/54% 61% 39% 46%;
     background-color: orange;
-    color: #10223a;
+    color: #10223A;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 500;
   }
@@ -3625,88 +3641,9 @@
 }
 
 #footer_left {
-  display: none;
-  width: 16.5%;
-  height: 100vh;
-  background-color: #10223A;
-  position: fixed;
-  margin-top: 56px;
-}
-#footer_left .wagg img {
-  padding-top: 70px;
-}
-#footer_left .listss {
-  align-items: center;
-}
-#footer_left .listss .pages {
-  position: relative;
-}
-#footer_left .listss .pages ul {
-  padding-top: 8px;
   visibility: hidden;
-}
-#footer_left .listss .pages ul li a {
-  color: #10223A;
-  border-radius: 1px;
-  padding: 10px 44px;
-  border-radius: 30% 70% 70% 30%/30% 45% 55% 70%;
-}
-#footer_left .listss .pages ul li a:hover {
-  background-color: orange;
-  border-radius: 62% 38% 82% 18%/54% 61% 39% 46%;
-}
-#footer_left .listss .pages .drop-menu {
-  background-color: whitesmoke;
-  position: absolute;
-  top: 5%;
-  left: 90%;
-  width: 200px;
-  border-radius: 10px;
-}
-#footer_left .listss .pages:hover ul {
-  visibility: visible;
-}
-#footer_left .listss ul .orn {
-  padding-top: 27px;
-}
-#footer_left .listss ul .orn a {
-  background-color: orange;
-  color: #10223A;
-}
-#footer_left .listss ul li {
-  padding: 10px 0;
-}
-#footer_left .listss ul li a {
-  border-radius: 30% 70% 70% 30%/30% 45% 55% 70%;
-  text-decoration: none;
-  transition: 0.7s ease-in-out;
-  padding: 9px;
-  border-radius: 8mm;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  color: white;
-}
-#footer_left .listss ul li a:hover {
-  border-radius: 62% 38% 82% 18%/54% 61% 39% 46%;
-  background-color: orange;
-  color: #10223A;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 500;
-}
-#footer_left .text i {
-  color: orange;
-  padding-right: 5px;
-}
-#footer_left .text p {
-  color: white;
-  font-size: 14px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 500;
-}
-#footer_left .icons i {
-  padding: 0 10px;
-  font-size: 20px;
-  color: orange;
+  width: 0;
+  height: 0;
 }
 
 #blog .box-img {
@@ -4245,7 +4182,8 @@
     font-size: 0.9rem;
   }
   #footer_left {
-    display: block;
+    visibility: visible;
+    z-index: 999;
     width: 16.5%;
     height: 100vh;
     background-color: #10223A;
@@ -4255,22 +4193,26 @@
   #footer_left .wagg img {
     padding-top: 70px;
   }
+  #footer_left .listss li {
+    text-align: center;
+  }
   #footer_left .listss .pages {
     position: relative;
   }
   #footer_left .listss .pages ul {
     padding-top: 8px;
     visibility: hidden;
+    border-radius: 0px;
   }
   #footer_left .listss .pages ul li a {
     color: #10223A;
     border-radius: 1px;
     padding: 10px 44px;
-    border-radius: 30% 70% 70% 30%/30% 45% 55% 70%;
+    transition: 0.1s ease-in;
   }
   #footer_left .listss .pages ul li a:hover {
     background-color: orange;
-    border-radius: 62% 38% 82% 18%/54% 61% 39% 46%;
+    border-radius: 0px;
   }
   #footer_left .listss .pages .drop-menu {
     background-color: whitesmoke;
@@ -4296,9 +4238,8 @@
   #footer_left .listss ul li a {
     border-radius: 30% 70% 70% 30%/30% 45% 55% 70%;
     text-decoration: none;
-    transition: 0.7s ease-in-out;
+    transition: 0.5s ease-in-out;
     padding: 9px;
-    border-radius: 8mm;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
     color: white;

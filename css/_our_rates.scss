@@ -54,103 +54,103 @@
       }
     }
   }
-  #footer_left {
+  #footer_left{
     visibility: visible;
     z-index: 999;
     width: 16.5%;
     height: 100vh;
-    background-color: #10223a;
+    background-color: #10223A;
     position: fixed;
     margin-top: 56px;
-    .wagg {
-      img {
+    .wagg{
+      img{
         padding-top: 70px;
       }
     }
-    .listss {
-      .pages {
+    .listss{
+      li{
+        text-align: center;
+      }
+      .pages{
         position: relative;
-        ul {
+        ul{
           padding-top: 8px;
           visibility: hidden;
           border-radius: 0px;
-          li {
-            a {
-              color: #10223a;
-              border-radius: 1px;
-              padding: 10px 44px;
-              transition: 0.1s ease-in;
-              &:hover {
-                background-color: orange;
-                border-radius: 0px;
-              }
-            }
+        li{
+          a{
+           color: #10223A; 
+           border-radius: 1px;
+           padding: 10px 44px;
+           transition: 0.1s ease-in;
+           &:hover{
+            background-color: orange;
+            border-radius: 0px;
+           }
           }
+          
+        } 
+        
         }
-
-        .drop-menu {
+  
+        .drop-menu{
           background-color: whitesmoke;
           position: absolute;
           top: 5%;
           left: 90%;
           width: 200px;
           border-radius: 10px;
-        }
-        &:hover {
-          ul {
+  
+        }  
+        &:hover{
+          ul{
             visibility: visible;
           }
-        }
+        }    
       }
-      ul {
-        .orn {
+      ul{
+        .orn{
           padding-top: 27px;
-          a {
-            background-color: orange;
-            color: #10223a;
+          a{
+            background-color: orange; 
+            color: #10223A;
           }
         }
-        li {
+        li{
           padding: 10px 0;
-          a {
+          a{
             border-radius: 30% 70% 70% 30% / 30% 45% 55% 70%;
             text-decoration: none;
             transition: 0.5s ease-in-out;
             padding: 9px;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont,
-              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-              "Helvetica Neue", sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: bold;
             color: white;
-            &:hover {
+            &:hover{
               border-radius: 62% 38% 82% 18% / 54% 61% 39% 46%;
-              background-color: orange;
-              color: #10223a;
-              font-family: system-ui, -apple-system, BlinkMacSystemFont,
-                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-                "Helvetica Neue", sans-serif;
-              font-weight: 500;
+             background-color: orange; 
+             color: #10223A;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             font-weight: 500;
             }
           }
         }
       }
     }
-    .text {
-      i {
+    .text{
+      i{
         color: orange;
-        padding-right: 5px;
+        padding-right: 5px ;
       }
-      p {
+      p{
         color: white;
         font-size: 14px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-          sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 500;
       }
     }
-    .icons {
-      i {
+    .icons{
+      i{
         padding: 0 10px;
         font-size: 20px;
         color: orange;
